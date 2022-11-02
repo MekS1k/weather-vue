@@ -87,7 +87,10 @@ export default {
         this.maxTemp = 0
       }
       } catch(e){//Обработка ошибки если города нет
+        if(this.query!=undefined)
+        {
         alert("Информации по городу "+ this.query + " Нет")
+        }
       }
     console.log(results)
     console.log(this.query)
